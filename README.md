@@ -1,1 +1,1 @@
-# JavaScript_Details
+JavaScript Details
