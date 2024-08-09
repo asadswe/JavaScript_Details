@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+
+    <p id="value"></p>
+
+    <script>
+        const person = {      // Create an Object:
+          firstName: "John",
+          lastName: "Doe",
+          id: 5566
+        };
+
+        document.getElementById("value").innerHTML = "The last name is " +  person["firstName"];
+        //document.getElementById("value").innerHTML = "The last name is " + person.lastName;
+    </script>
+    
+</body>
+</html>
