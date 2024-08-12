@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+
+    <p id="value"></p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 50,
+            eyeColor: "blue"
+        };
+
+        const x = person; // Create a Copy
+
+        x.age = 10; // Change Age
+
+        document.getElementById("value").innerHTML = person.firstName + " is " + person.age + " years old.";
+    </script>
+
+</body>
+
+</html>
