@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Properties</title>
+</head>
+
+<body>
+
+  <p id="value"></p>
+
+  <script>
+    const myObj = {
+      name: "John",
+      age: 30,
+      myCars: {           // Create nested Objects
+        car1: "Ford",
+        car2: "BMW",
+        car3: "Fiat"
+      }
+    }
+
+    let p1 = "myCars";
+    let p2 = "car2";
+    document.getElementById("value").innerHTML = myObj[p1][p2];
+  </script>
+
+</body>
+
+</html>
