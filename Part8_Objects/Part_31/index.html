@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructors</title>
+</head>
+
+<body>
+
+    <p id="value"></p>
+
+    <script>
+        function Person(first, last, age, eye) { // Constructor function for Person Objects
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+        // Create 2 Person Objects
+        const myFather = new Person("AAAA", "BBBB", 50, "blue");
+        const myMother = new Person("CCCC", "DDDD", 48, "green");
+
+        // Add a new Property
+        Person.prototype.nationality = "Bangladesh";
+
+        document.getElementById("value").innerHTML = myFather.nationality +" "+myMother.nationality;
+    </script>
+
+
+</body>
+
+</html>
