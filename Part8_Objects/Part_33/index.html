@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Constructors</title>
+</head>
+
+<body>
+
+    <p id="value"></p>
+
+    <script>
+        // Constructor function for Person Objects
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+        // Create 2 Person objects
+        const myFather = new Person("Asaduzzaman", "Bipu", 50, "blue");
+        const myMother = new Person("dot", "dott", 48, "black");
+
+        myMother.changeName = function (name) {    // Add a Name Method
+            this.lastName = name;
+        }
+        
+        myMother.changeName("aktari");  // Change Name
+
+        document.getElementById("value").innerHTML =myMother.lastName;
+    </script>
+
+
+</body>
+
+</html>
