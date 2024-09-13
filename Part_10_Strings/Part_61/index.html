@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Search</title>
+</head>
+
+<body>
+
+    <p id="value"></p>
+
+    <script>
+        let text = "I am a student student student student.";
+        const myArr = text.match(/stu/g);
+        document.getElementById("value").innerHTML = myArr.length + " " + myArr;
+    </script>
+
+</body>
+
+</html>
