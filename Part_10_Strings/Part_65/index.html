@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Search</title>
+</head>
+
+<body>
+
+    <p id="value"></p>
+
+    <script>
+        let text = "I am a boy Boy boy."
+        const iterator = text.matchAll(/boy/gi);
+
+        document.getElementById("value").innerHTML = Array.from(iterator);
+    </script>
+
+</body>
+
+</html>
