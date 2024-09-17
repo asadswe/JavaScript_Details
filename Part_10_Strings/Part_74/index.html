@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Strings</title>
+</head>
+
+<body>
+
+    <p id="value"></p>
+    <p id="value1"></p>
+
+    <script>
+        let text =
+            `The quick
+    brown fox
+    jumps over
+    the lazy dog`;
+
+         let text1 = `The quick brown fox jumps over the lazy dog`;
+
+        document.getElementById("value").innerHTML = text;
+        document.getElementById("value1").innerHTML = text1;
+    </script>
+
+</body>
+
+</html>
