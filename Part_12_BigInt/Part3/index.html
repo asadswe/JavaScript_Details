@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript BigInt</title>
+</head>
+
+<body>
+
+    <p id="value"></p>
+
+    <script>
+        let x = 123456789012345678901234567890n;
+        let y = BigInt("123456789012345678901234567890");
+        document.getElementById("value").innerHTML = x + "<br>" + y;
+    </script>
+
+</body>
+
+</html>
