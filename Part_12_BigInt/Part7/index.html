@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript BigInt</title>
+</head>
+
+<body>
+
+    <p id="value"></p>
+
+    <script>
+        let hex = 0x20000000000003n;
+        let octal = 0o400000000000000003n;
+        let binary = 0b100000000000000000000000000000000000000000000000000011n;
+
+        document.getElementById("value").innerHTML = hex + "<br>" + octal + "<br>" + binary;
+    </script>
+
+</body>
+
+</html>
