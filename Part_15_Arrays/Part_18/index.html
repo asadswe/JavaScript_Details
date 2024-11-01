@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arrays</title>
+</head>
+
+<body>
+
+    <p id="value"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple"];
+        fruits[6] = "Lemon";
+
+        let fLen = fruits.length;
+        let text = "";
+        for (i = 0; i < fLen; i++) {
+            text += fruits[i] + "<br>";
+        }
+
+        document.getElementById("value").innerHTML = text;
+    </script>
+
+</body>
+
+</html>
